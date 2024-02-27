@@ -1,0 +1,62 @@
+p{
+    color: rgb(110, 107, 107);
+}
+a{
+    
+    color: blue;
+}
+h1
+{
+    background-color: grey;
+    color: rgb(81, 38, 38);
+
+}
+body{
+    background-color: lightblue;
+}
+hr{
+    color: blue;
+}
+img{
+    border-radius: 20%;
+}
+ul{
+    list-style-type: lower-alpha;
+}
+h2.tables{
+    color: green;
+}
+
+div{
+    border : 1px dashed blue;
+    padding-left: 10px;
+    margin: 5px
+
+    
+}
+#first {
+    background-color: lightgrey;
+}
+.yellowb{
+    background-color: yellow;
+
+}
+#super{
+
+    text-decoration: underline;
+}
+#show  a
+{
+    color: rgb(0, 0, 0);
+}
+#show  a:hover
+{
+    color: orange;
+    text-decoration: underline;
+    background-color: aquamarine;
+    font-size: 2em;
+}
+p:first-letter{
+    font-size: 2em;
+}
+
