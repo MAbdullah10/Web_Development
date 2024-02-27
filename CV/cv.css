@@ -1,0 +1,307 @@
+body{
+    background: linear-gradient(to right, #125e65,
+    #000000);
+}
+.container{
+    width: 100%;
+}
+.left-box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 350px;
+    width: 400px;
+    outline: 6px solid rgb(108, 191, 224);
+    margin-left: 10em;
+    margin-top: 6em;
+    padding-top: 2em;
+    float: left;
+    justify-content: center ;
+    justify-self: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
+.profile_pic{
+    height: 175px;
+    width : 175px;
+    border-radius: 100px;
+    align-items: center;
+    padding-top: 10px;
+}
+.h1{
+    color: skyblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:44px;
+    margin: 15px;
+    padding-top: 10px;
+}
+.h3{
+    color: rgb(0, 55, 58) ;
+    font-weight: 100 ;
+    font-size: 21px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.right-box{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 350px;
+    width: 500px;
+    margin-left: 10em;
+    margin-top: 8em;
+    padding-top: 2em;
+    float: left;
+    justify-content: center ;
+    justify-self: center;
+    overflow: hidden;
+    padding-left: 0px;
+    margin-left: 100px;
+    
+}
+#list
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: skyblue ;
+    padding: 0px;
+    margin: 0px;
+}
+.ul{
+    
+    list-style-type:square;
+}
+.label{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.value{
+    margin-left: 2em;
+    text-align: right;
+    font-weight: 100;
+}
+.hr{
+ color: skyblue;
+    height: 1px;
+    background-color: skyblue;
+    margin-bottom: 14px;
+}
+#linkedin{
+    height: 22;
+    width: 22;
+    margin-left: 37px ;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+}
+#linkedin:hover{
+    height: 27;
+    width: 27;
+}
+#github{
+    height: 23;
+    width: 24;
+    margin-left: 25px ;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+#github:hover{
+    height: 28;
+    width: 29;
+}
+#insta{
+    height: 23;
+    width: 23;
+    margin-left: 25px ;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+#insta:hover{
+    height: 28;
+    width: 28;
+}
+.buttons{
+    height: 80px;
+    width: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-self: left;
+    align-items: center;
+    align-content: left;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.buttons h2 {
+    text-align: center;
+    padding-top: 8px;
+    outline: 2px solid rgb(108, 191, 224);
+    padding: 8px;
+    font-weight:normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: skyblue;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 25px;
+    width: 100px;
+    margin-top: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+.buttons h2:hover{
+    height: 27px;
+    width: 107px;
+    font-size: 22px;
+    outline: 4px solid  rgb(17, 17, 17);
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+a{
+    text-decoration : none;
+}
+.left{
+    border-radius: 13px;
+    margin-left: 11px;
+    outline: 4px solid rgb(108, 191, 224);
+    width: 402px;
+    height: 585px;
+    color:skyblue;
+    margin-top: 10px;
+    float: left;
+}
+h1.heads{
+    border-radius: 7px;
+    outline: 2px solid rgb(108, 191, 224);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name{
+    display: inline-block;
+    width: 100px;
+    textx`;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 6px;
+    margin-bottom: 0px;
+    width: 225px;
+    font-size: 21px;   
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.TIME{
+    text-align: right;
+    float: right;
+    text-align: right;
+    font-size: 0.9rem;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 14px;
+    text-decoration: underline; 
+    opacity: 80%;
+    color: rgb(227, 227, 227);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.institute{
+    display: block;
+    padding-left: 10px;
+    opacity: 70%;
+    margin-bottom: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.institute:hover{
+    opacity: 100%;
+    text-decoration: underline; 
+}
+a.institute{
+    color: skyblue ;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.ed-ul{
+    list-style-type:square;
+}
+.ed-li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: skyblue ;
+    margin-bottom:5px;
+    font-size: 18px;
+    
+}
+.certifications:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:skyblue ;
+}
+.right{
+    height: 600px;
+    width: 930px;
+    margin-left: 40px;
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.ed-head{
+    text-align: center;
+    color: skyblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: 2px solid rgb(108, 191, 224);
+    padding:3px;
+    margin:2px;
+    border-radius: 8px;
+}
+.ed-heading{
+    color: skyblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: #1d637b;
+    padding-bottom: 3px;
+    border-bottom: 3px solid rgb(108, 191, 224);  
+}
+.sub-left{
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.sub-right{
+    float:right;
+    margin-top: 10px;
+    margin-right: 120px;
+}
+#ed{
+    transform: rotate(90deg);
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-color: skyblue;
+}
+#projects{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.upper{
+    color: skyblue;
+    margin-top: 40px;
+    font-size: 19px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 15px;
+    line-height: 25px;
+}
