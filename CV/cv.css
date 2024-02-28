@@ -197,7 +197,6 @@ h1.heads{
 .name{
     display: inline-block;
     width: 100px;
-    textx`;
     font-weight: bold;
     padding-left: 10px;
     padding-top: 6px;
@@ -252,7 +251,7 @@ a.institute{
 }
 .right{
     height: 600px;
-    width: 930px;
+    width: 900px;
     margin-left: 40px;
     float: left;
     overflow: hidden;
@@ -282,13 +281,13 @@ a.institute{
 .sub-right{
     float:right;
     margin-top: 10px;
-    margin-right: 120px;
+    margin-right: 90px;
 }
 #ed{
     transform: rotate(90deg);
     height: 2px;
-    width: 100%;
-    border: none;
+    width: 103%;
+    border:none;
     background-color: skyblue;
 }
 #projects{
