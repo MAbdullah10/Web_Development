@@ -1,0 +1,57 @@
+#full_page{
+    background-color: rgb(26, 25, 25);
+    height: 100%;
+    width: 100%;
+}
+#product{
+    background-color: rgb(26, 25, 25);
+    color: rgb(225, 226, 228);
+    text-align: center;
+    border-bottom-color: white;
+    padding-top:1.5%;
+    outline: auto;
+    padding-bottom: 1.5%;
+}
+#storyList{
+    background-color: rgb(26, 25, 25);
+    color: rgb(225, 226, 228);
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#addStoryForm{
+    background-color: rgb(26, 25, 25);
+    color: rgb(225, 226, 228);
+    padding-left: 1.5%;
+    padding-bottom: 2%;
+}
+#addStoryForm input{
+    border-radius: 6px;
+    color: black;
+    background-color: black;
+    border-color: white;
+    margin-right: 1%;
+    padding: 2px;
+    color: rgb(225, 226, 228);
+}
+#addStoryForm input ::placeholder{
+    color: lightgrey;
+}
+#addStoryForm button{
+    padding: 2px;
+    outline: auto rgb(195, 195, 195);
+    border-radius: 4px;
+    margin-left: 1%;
+    background-color: rgb(228, 225, 225);
+    color: black;
+}
+#addStoryForm button:hover{
+    color: white;
+    background-color: black;
+}
+#addStory{
+    color: black;
+    border: white;
+    border-radius: 4px;
+    background-color: black;
+}
