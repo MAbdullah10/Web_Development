@@ -1,0 +1,7 @@
+npm init -y //node project
+
+npm install express //install express
+
+npm install mongoose //install mongoose
+
+npm i -g nodemon //globally installed
