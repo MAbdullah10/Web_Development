@@ -1,16 +1,16 @@
 <%- include("layouts/header.ejs") %>
 <div class="btn-group" role="group" aria-label="Basic example">
   <a href="#Mocassian">
-    <button type="button" class ="btn-main"class="btn btn-primary">Mocassian</button>
+    <button type="button" class ="btn-main"class="btn btn-primary">Moccs</button>
   </a>
   <a href="#Loafer">
-    <button type="button" class ="btn-main"class="btn btn-primary">Loafer</button>
+    <button type="button" class ="btn-main"class="btn btn-primary">Loafers</button>
   </a>
   <a href= "#Derby">
-    <button type="button" class ="btn-main"class="btn btn-primary">Derby</button>
+    <button type="button" class ="btn-main"class="btn btn-primary">Boots</button>
   </a>
   <a href="#formal">
-    <button type="button" class ="btn-main"class="btn btn-primary">Formal</button>
+    <button type="button" class ="btn-main"class="btn btn-primary">Formals</button>
   </a>
   <a href="#Sandals">
     <button type="button" class ="btn-main"class="btn btn-primary">Sandals</button>
@@ -59,7 +59,7 @@
       <% categorizedCards[category].forEach(card => { %>
         <div class="product-card">
           <div class="product-image">
-            <img src="<%=card.image%>" alt="Product Image">
+            <img id= "cardimage" src="<%=card.image%>" alt="Product Image">
           </div>
           <div class="product-details">
             <div class="product-name"><%= card.name %></div>

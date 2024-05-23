@@ -16,8 +16,6 @@ router.get('/', async (req, res) => {
         res.status(500).json({message: err.message});
     }
 })
-
-
 router.get('/contact-us', (req, res) => {
     res.render('contact-us') 
 })
