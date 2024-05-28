@@ -54,6 +54,12 @@ app.use('/auth', authRoutes);
 
 const homepageRouter = require ('./routers/homepage')
 app.use('/', homepageRouter)
+
+  const contactRoutes = require('./routers/contact');
+
+  app.use('/', contactRoutes);
+  
+
 app.listen(4000,()=>{
     console.log('Server is running on port 4000')
 })

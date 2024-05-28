@@ -4,15 +4,15 @@
       <img class = "image" src="/image/Untitled design (3).png" alt="Your Image">
       <div class="toi">
         <h1 id = "git">GET IN TOUCH</h1>
-        <form id ="form">
+        <form id ="form" action="/auth/contact-us" method ="post">
             <div class="mb-3">
-              <input type="text" class="form-control" id="name" placeholder="name" required>
+              <input name ="name" type="text" class="form-control" id="name" placeholder="name" required>
             </div>
             <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="email"required>
+                <input name = "email" type="email" class="form-control" id="email" placeholder="email"required>
             </div>
             <div class="message-box">
-                <textarea id="msg" cols="30" rows="10" placeholder="message" required></textarea>
+                <textarea name="message" id="msg" cols="30" rows="10" placeholder="message" required></textarea>
             </div>
             <div class="mb-3 form-check" id = "checkbox">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
