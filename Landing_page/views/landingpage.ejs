@@ -58,11 +58,12 @@
     <div class="product-list">
       <% categorizedCards[category].forEach(card => { %>
         <div class="product-card">
+          <a href="/order/<%=card._id%>" style="text-decoration: none; color: black;">
           <div class="product-image">
             <img id= "cardimage" src="<%=card.image%>" alt="Product Image">
           </div>
           <div class="product-details">
-            <div class="product-name"><%= card.name %></div>
+            <div class="product-name"><%=card.name %></div>
             <div class="product-price">
               <span class="discounted-price"><%= card.discountedPrice %></span>
               <span class="original-price"><%= card.price %></span>

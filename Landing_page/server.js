@@ -58,8 +58,9 @@ app.use('/', homepageRouter)
   const contactRoutes = require('./routers/contact');
 
   app.use('/', contactRoutes);
-  
-
+  const orderRoutes = require('./routers/order');
+  app.use('/order',orderRoutes)
+ 
 app.listen(4000,()=>{
     console.log('Server is running on port 4000')
 })

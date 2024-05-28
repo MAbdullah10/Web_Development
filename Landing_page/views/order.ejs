@@ -1,38 +1,15 @@
 <%- include("layouts/header.ejs") %>
+<hr style = "width : 2px">
 <body>
-  
- <div class="btn-group" role="group" aria-label="Basic example">
-      <a href="#Mocassian">
-        <button type="button" class ="btn-main"class="btn btn-primary">Mocassian</button>
-      </a>
-      <a href="#Loafer">
-        <button type="button" class ="btn-main"class="btn btn-primary">Loafer</button>
-      </a>
-      <a href="#Derby">
-        <button type="button" class ="btn-main"class="btn btn-primary">Derby</button>
-      </a>
-      <a href="#Formal">
-        <button type="button" class ="btn-main"class="btn btn-primary">Formal</button>
-      </a>
-      <a href="#Sandals">
-        <button type="button" class ="btn-main"class="btn btn-primary">Sandals</button>
-      </a>
-      <a href="#customer_service">
-        <button type="button" class ="btn-main"class="btn btn-primary">Contact us</button>
-      </a>
-  </div>
-  </div> 
   <body>
     <div class="container">
         <div class="product-images">
-            <div class="main-image">
-                <img src="path/to/main-image.png" alt="Main Product Image">
-            </div>
+                <img src ="<%=mycard.image%>" alt="Main Product Image">
         </div>
         <div class="product-details">
             <h1 class="product-title">M-SR-0400076-SANDAL</h1>
             <div class="price">
-                <span class="original-price"><%=<card class="origin"></card></span>
+                <span class="original-price"><card class="origin"></card></span>
                 <span class="discounted-price">Rs. 1,799.00</span>
             </div>
             <div class="size-chart">
@@ -52,7 +29,9 @@
                 <input type="text" value="1">
                 <button class="quantity-btn">+</button>
             </div>
-            <button class="sold-out-btn">Order Now</button>
+            <a href="/order/place/<%=mycard._id%>">
+              <button class="sold-out-btn">Order Now</button>
+            </a>
             <div class="description">
                 <p>Description</p>
             </div>

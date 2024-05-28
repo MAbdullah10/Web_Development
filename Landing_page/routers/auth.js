@@ -20,6 +20,7 @@ router.post('/login', async (req, res) => {
     return res.redirect('/user/login');
   }
   req.session.user = user;
+    res.locals.userId = user;
   return res.redirect('/');
 });
 
