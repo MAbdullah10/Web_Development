@@ -17,7 +17,7 @@ router.post('/auth/contact-us', async (req, res) => {
     });
 
     await newContact.save();
-    res.send('Your message has been received. Thank you!');
+    res.redirect('/')
   } catch (err) {
     console.error(err);
     res.send('There was an error saving your message. Please try again.');

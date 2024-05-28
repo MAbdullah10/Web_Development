@@ -1,7 +1,6 @@
 const express = require('express')
 const app=express()
 const mongoose = require("mongoose");
-
 const bcrypt = require('bcryptjs');
 
 mongoose
@@ -60,6 +59,13 @@ app.use('/', homepageRouter)
   app.use('/', contactRoutes);
   const orderRoutes = require('./routers/order');
   app.use('/order',orderRoutes)
+
+  app.use(session({
+    secret: 'your_secret_key',
+    resave: false,
+    saveUninitialized: true,
+    cookie: 100,
+  }));
  
 app.listen(4000,()=>{
     console.log('Server is running on port 4000')

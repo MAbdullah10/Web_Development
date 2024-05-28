@@ -3,7 +3,6 @@ const router = express.Router();
 const card = require('../models/card');
 const order = require('../models/order');
 
-// Route to display product details
 router.get('/:id', async (req, res) => {
   try {
     const cardId = req.params.id;
@@ -20,7 +19,6 @@ router.get('/:id', async (req, res) => {
 });
 router.get('/place/:id',async(req, res)=>{
   try {
-    // const { userid, quantity, productid } = req.body;
     const Id = req.params.id;
     const newOrder = new order({
         userid:"6655f62b57830cfafab59fb0",
@@ -28,7 +26,6 @@ router.get('/place/:id',async(req, res)=>{
         productid:Id
     });
     await newOrder.save();
-    // res.status(201).json(newOrder);
     res.redirect('/');
 } catch (error) {
     res.status(500).json({ error: error.message });

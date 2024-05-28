@@ -1,28 +1,28 @@
 <%- include("layouts/header.ejs") %>
-<hr style = "width : 2px">
+<hr class ="hr">
+<hr class ="hr">
+
 <body>
   <body>
     <div class="container">
-        <div class="product-images">
-                <img src ="<%=mycard.image%>" alt="Main Product Image">
+        <div class="product-imag">
+            <img class = "p_image" src ="<%=mycard.image%>">
         </div>
+    <div class = "details">
         <div class="product-details">
-            <h1 class="product-title">M-SR-0400076-SANDAL</h1>
+            <h1 class="product-title"><%=mycard.name%></h1>
             <div class="price">
-                <span class="original-price"><card class="origin"></card></span>
-                <span class="discounted-price">Rs. 1,799.00</span>
+                <span class="discounted-price"><%=mycard.
+                    discountedPrice%></span>
+                
+                <span class="original-price"><%=mycard.price%></span>
             </div>
-            <div class="size-chart">
-                <a href="#">SIZE CHART</a>
-            </div>
+
             <div class="size-options">
                 <button class="size">7</button>
                 <button class="size">8</button>
                 <button class="size">9</button>
                 <button class="size">10</button>
-            </div>
-            <div class="color-options">
-                <img src="path/to/color-image.png" alt="Color Option">
             </div>
             <div class="quantity">
                 <button class="quantity-btn">-</button>
@@ -34,6 +34,7 @@
             </a>
             <div class="description">
                 <p>Description</p>
+            </div>
             </div>
         </div>
     </div>
