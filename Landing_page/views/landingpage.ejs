@@ -1,15 +1,15 @@
 <%- include("layouts/header.ejs") %>
 <div class="btn-group" role="group" aria-label="Basic example">
-  <a href="#Mocassian">
+  <a href="#Moccs">
     <button type="button" class ="btn-main"class="btn btn-primary">Moccs</button>
   </a>
-  <a href="#Loafer">
+  <a href="#Loafers">
     <button type="button" class ="btn-main"class="btn btn-primary">Loafers</button>
   </a>
-  <a href= "#Derby">
+  <a href= "#Boots">
     <button type="button" class ="btn-main"class="btn btn-primary">Boots</button>
   </a>
-  <a href="#formal">
+  <a href="#Formals">
     <button type="button" class ="btn-main"class="btn btn-primary">Formals</button>
   </a>
   <a href="#Sandals">
@@ -53,8 +53,8 @@
 </div>
 
 <% Object.keys(categorizedCards).forEach(category => { %>
-  <section id="#<%= category %>">
-    <h2  class = "categories"><%= category %></h2>
+  <section id="<%=category%>">
+    <h2  class = "categories"><%=category%></h2>
     <div class="product-list">
       <% categorizedCards[category].forEach(card => { %>
         <div class="product-card">
