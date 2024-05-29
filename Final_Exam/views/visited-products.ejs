@@ -1,0 +1,29 @@
+<%- include("layouts/header.ejs") %>
+
+<h1>Visited Products</h1>
+<div class="product-list">
+    <% if (cards.length > 0) { %>
+        <% cards.forEach(card => { %>
+            <div class="product-card">
+                <a href="/products/<%= card._id %>" style="text-decoration: none; color: black;">
+                    <div class="product-image">
+                        <img id="cardimage" src="<%= card.image %>" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name"><%= card.name %></div>
+                        <div class="product-price">
+                            <span class="discounted-price"><%= card.discountedPrice %></span>
+                            <span class="original-price"><%= card.price %></span>
+                            <span class="discount-percentage"><%= card.percentageDiscount %></span>
+                        </div>
+                        <div class="product-description">ONLINE EXCLUSIVE DISCOUNT</div>
+                    </div>
+                </a>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>You have not visited any products yet.</p>
+    <% } %>
+</div>
+
+<%- include("layouts/footer.ejs") %>

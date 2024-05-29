@@ -52,6 +52,37 @@
     </button>
 </div>
 
+<div class="visited-products-link">
+  <a href="/visited-products" class="btn btn-primary">View Visited Products</a>
+</div>
+
+<% if (featuredCards && featuredCards.length > 0) { %>
+  <section id="featured">
+      <h2 class="categories">Featured Products</h2>
+      <div class="product-list">
+          <% featuredCards.forEach(card => { %>
+              <div class="product-card">
+
+                  <a href="/order/<%=card._id%>" style="text-decoration: none; color: black;">
+                      <div class="product-image">
+                          <img id="cardimage" src="<%=card.image%>" alt="Product Image">
+                      </div>
+                      <div class="product-details">
+                          <div class="product-name"><%=card.name %></div>
+                          <div class="product-price">
+                              <span class="discounted-price"><%= card.discountedPrice %></span>
+                              <span class="original-price"><%= card.price %></span>
+                              <span class="discount-percentage"><%= card.percentageDiscount %></span>
+                          </div>
+                          <div class="product-description">ONLINE EXCLUSIVE DISCOUNT</div>
+                      </div>
+                  </a>
+              </div>
+          <% }); %>
+      </div>
+  </section>
+<% } %>
+<!-- <a href="/order/place/<%=mycard._id%>"> </a> -->
 <% Object.keys(categorizedCards).forEach(category => { %>
   <section id="<%=category%>">
     <h2  class = "categories"><%=category%></h2>
@@ -84,6 +115,33 @@
     <img src="/image/up-arrow.png" alt="">
   </div>
 </a>
+
+
+<!-- 
+<% Object.keys(categorizedCards).forEach(category => { %>
+  <section id="<%=category%>">
+    <h2  class = "categories"><%=category%></h2>
+    <div class="product-list">
+      <% categorizedCards[category].forEach(card => { %>
+        <div class="product-card">
+          <a href="/order/<%=card._id%>" style="text-decoration: none; color: black;">
+          <div class="product-image">
+            <img id= "cardimage" src="<%=card.image%>" alt="Product Image">
+          </div>
+          <div class="product-details">
+            <div class="product-name"><%=card.name %></div>
+            <div class="product-price">
+              <span class="discounted-price"><%= card.discountedPrice %></span>
+              <span class="original-price"><%= card.price %></span>
+              <span class="discount-percentage"><%= card.percentageDiscount %></span>
+            </div>
+            <div class="product-description">ONLINE EXCLUSIVE DISCOUNT</div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </section>
+<% }); %> -->
 <%- include("layouts/footer.ejs") %>
 </body>
 </html>

@@ -5,6 +5,10 @@ const cardSchema = new mongoose.Schema({
     image: String,
     price: String,
     discountedPrice: String,
-    percentageDiscount:String
+    percentageDiscount:String,
+    isFeatured: {
+        type: Boolean,
+        default: false
+        }
 });
 module.exports = mongoose.model('card', cardSchema);

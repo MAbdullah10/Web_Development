@@ -6,7 +6,7 @@ const order = require('../models/order');
 router.get('/:id', async (req, res) => {
   try {
     const cardId = req.params.id;
-    console.log("This is card id", cardId )
+    // console.log("This is card id", cardId )
     const mycard = await card.findById(cardId);
     if (!mycard) {
       return res.status(404).send('Product not found');

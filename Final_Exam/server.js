@@ -50,7 +50,6 @@ app.get('/signup', (req, res) => {
 const authRoutes = require('./routers/auth');
 app.use('/auth', authRoutes);
 
-
 const homepageRouter = require ('./routers/homepage')
 app.use('/', homepageRouter)
 
@@ -63,10 +62,15 @@ app.use('/', homepageRouter)
   app.use(session({
     secret: 'your_secret_key',
     resave: false,
-    saveUninitialized: true,
-    cookie: 100,
-  }));
+    saveUninitialized: true
+}));
  
+  app.use(express.urlencoded({ extended: true }));
+  app.use(express.json());
+  
+  app.use('/', homepageRouter);
+  //app.use('/', cardRouter);
+
 app.listen(3000,()=>{
     console.log('Server is running on port 3000')
 })
