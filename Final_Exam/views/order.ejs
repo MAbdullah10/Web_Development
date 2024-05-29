@@ -1,0 +1,42 @@
+<%- include("layouts/header.ejs") %>
+<hr class ="hr">
+<hr class ="hr">
+
+<body>
+  <body>
+    <div class="container">
+        <div class="product-imag">
+            <img class = "p_image" src ="<%=mycard.image%>">
+        </div>
+    <div class = "details">
+        <div class="product-details">
+            <h1 class="product-title"><%=mycard.name%></h1>
+            <div class="price">
+                <span class="discounted-price"><%=mycard.
+                    discountedPrice%></span>
+                
+                <span class="original-price"><%=mycard.price%></span>
+            </div>
+
+            <div class="size-options">
+                <button class="size">7</button>
+                <button class="size">8</button>
+                <button class="size">9</button>
+                <button class="size">10</button>
+            </div>
+            <div class="quantity">
+                <button class="quantity-btn">-</button>
+                <input type="text" value="1">
+                <button class="quantity-btn">+</button>
+            </div>
+            <a href="/order/place/<%=mycard._id%>">
+              <button class="sold-out-btn">Order Now</button>
+            </a>
+            <div class="description">
+                <p>Description</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+  <%- include("layouts/footer.ejs") %>

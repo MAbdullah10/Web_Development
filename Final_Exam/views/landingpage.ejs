@@ -1,0 +1,89 @@
+<%- include("layouts/header.ejs") %>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <a href="#Moccs">
+    <button type="button" class ="btn-main"class="btn btn-primary">Moccs</button>
+  </a>
+  <a href="#Loafers">
+    <button type="button" class ="btn-main"class="btn btn-primary">Loafers</button>
+  </a>
+  <a href= "#Boots">
+    <button type="button" class ="btn-main"class="btn btn-primary">Boots</button>
+  </a>
+  <a href="#Formals">
+    <button type="button" class ="btn-main"class="btn btn-primary">Formals</button>
+  </a>
+  <a href="#Sandals">
+    <button type="button" class ="btn-main"class="btn btn-primary">Sandals</button>
+  </a>
+  <a href="#Chappal">
+    <button type="button" class ="btn-main"class="btn btn-primary">Chappal</button>
+  </a>
+  <a href="#customer_service">
+    <button type="button" class ="btn-main"class="btn btn-primary">Contact us</button>
+  </a>
+</div>
+</div> 
+<div id = "arrow"></div>
+
+ <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/image/Untitled design.png" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="/image/SALE.png" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="/image/Untitled design (2).png" class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<% Object.keys(categorizedCards).forEach(category => { %>
+  <section id="<%=category%>">
+    <h2  class = "categories"><%=category%></h2>
+    <div class="product-list">
+      <% categorizedCards[category].forEach(card => { %>
+        <div class="product-card">
+          <a href="/order/<%=card._id%>" style="text-decoration: none; color: black;">
+          <div class="product-image">
+            <img id= "cardimage" src="<%=card.image%>" alt="Product Image">
+          </div>
+          <div class="product-details">
+            <div class="product-name"><%=card.name %></div>
+            <div class="product-price">
+              <span class="discounted-price"><%= card.discountedPrice %></span>
+              <span class="original-price"><%= card.price %></span>
+              <span class="discount-percentage"><%= card.percentageDiscount %></span>
+            </div>
+            <div class="product-description">ONLINE EXCLUSIVE DISCOUNT</div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </section>
+<% }); %>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<a href="#arrow">
+  <div id = "arrow_up" class ="sticky-bottom ">
+    <img src="/image/up-arrow.png" alt="">
+  </div>
+</a>
+<%- include("layouts/footer.ejs") %>
+</body>
+</html>

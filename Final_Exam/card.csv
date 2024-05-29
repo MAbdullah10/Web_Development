@@ -1,0 +1,45 @@
+name,category,price,discountedPrice,percentageDiscount
+SR-3851 Brown Derby,Derby, Rs.9499.00, Rs.11799.00, 20%
+SR-5421 Brown Sandals,Sandals, Rs.10000.00, Rs.6999.00, 30%
+SR-3234 Black Derby, Derby, Rs.8999.00, Rs.10999.00, 20%
+SR-5678 Navy Blue Sandals, Sandals, Rs.5999.00, Rs.7999.00, 25%
+SR-1012 Charcoal Grey Mocassian, Mocassian, Rs.7999.00, Rs.9999.00, 20%
+SR-6456 Cocoa Brown Chappal, Chappal, Rs.4999.00, Rs.6999.00, 28%
+SR-2890 Tan Loafer, Loafer, Rs.6999.00, Rs.8999.00, 22%
+SR-3357 Beige Derby, Derby, Rs.9999.00, Rs.12999.00, 23%
+SR-5789 Burgundy Sandals, Sandals, Rs.6999.00, Rs.8999.00, 22%
+SR-1468 Navy Blue Mocassian, Mocassian, Rs.7999.00, Rs.9999.00, 20%
+SR-6520 Charcoal Grey Chappal, Chappal, Rs.5999.00, Rs.7999.00, 25%
+SR-2690 Cocoa Brown Loafer, Loafer, Rs.8999.00, Rs.10999.00, 20%
+SR-3472 Tan Derby, Derby, Rs.7999.00, Rs.9999.00, 20%
+SR-5836 Beige Sandals, Sandals, Rs.6999.00, Rs.8999.00, 22%
+SR-1123 Navy Blue Mocassian, Mocassian, Rs.8999.00, Rs.10999.00, 20%
+SR-6745 Charcoal Grey Chappal, Chappal, Rs.5999.00, Rs.7999.00, 25%
+SR-2380 Cocoa Brown Loafer, Loafer, Rs.7999.00, Rs.9999.00, 20%
+SR-3684 Burgundy Derby, Derby, Rs.8999.00, Rs.10999.00, 20%
+SR-5912 Navy Blue Sandals, Sandals, Rs.6999.00, Rs.8999.00, 22%
+SR-1234 Charcoal Grey Mocassian, Mocassian, Rs.7999.00, Rs.9999.00, 20%
+SR-6856 Cocoa Brown Chappal, Chappal, Rs.4999.00, Rs.6999.00, 28%
+SR-2490 Grey Loafer, Loafer, Rs.8999.00, Rs.10999.00, 20%
+SR-3753 Beige Derby, Derby, Rs.9999.00, Rs.12999.00, 23%
+SR-5123 Black Sandals, Sandals, Rs.5999.00, Rs.7999.00, 25%
+SR-3234 Black Derby, Derby, Rs.8999.00, Rs.10999.00, 20%
+SR-5678 Green Sandals, Sandals, Rs.5999.00, Rs.7999.00, 25%
+SR-1012 Black Mocassian, Mocassian, Rs.7999.00, Rs.9999.00, 20%
+SR-6456 Green Chappal, Chappal, Rs.4999.00, Rs.6999.00, 28%
+SR-2890 Black Loafer, Loafer, Rs.6999.00, Rs.8999.00, 22%
+SR-3357 Green Derby, Derby, Rs.9999.00, Rs.12999.00, 23%
+SR-5789 Black Sandals, Sandals, Rs.6999.00, Rs.8999.00, 22%
+SR-1468 Green Mocassian, Mocassian, Rs.7999.00, Rs.9999.00, 20%
+SR-6520 Black Chappal, Chappal, Rs.5999.00, Rs.7999.00, 25%
+SR-2690 Green Loafer, Loafer, Rs.8999.00, Rs.10999.00, 20%
+SR-4234 Black Formal Shoes, Formal, Rs.8999.00, Rs.10999.00, 20%
+SR-4678 Brown Formal Shoes, Formal, Rs.5999.00, Rs.7999.00, 25%
+SR-4012 Navy Blue Formal Shoes, Formal, Rs.7999.00, Rs.9999.00, 20%
+SR-4456 Charcoal Grey Formal Shoes, Formal, Rs.4999.00, Rs.6999.00, 28%
+SR-4890 Black Formal Shoes, Formal, Rs.6999.00, Rs.8999.00, 22%
+SR-4357 Brown Formal Shoes, Formal, Rs.9999.00, Rs.12999.00, 23%
+SR-4789 Navy Blue Formal Shoes, Formal, Rs.6999.00, Rs.8999.00, 22%
+SR-4468 Charcoal Grey Formal Shoes, Formal, Rs.7999.00, Rs.9999.00, 20%
+SR-4520 Black Formal Shoes, Formal, Rs.5999.00, Rs.7999.00, 25%
+SR-4690 Brown Formal Shoes, Formal, Rs.8999.00, Rs.10999.00, 20%
